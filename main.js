@@ -31,7 +31,7 @@ do {
     let reserveThis;
     let modelInput = prompt("Que modelo desea reservar? Podemos ofrecerle los siguientes:\n" + availableCars());
 
-    if (modelInput && isNaN(modelInput)){
+    if (modelInput && !isNaN(modelInput)){
         modelInput = modelInput.toLowerCase();
         reserveThis = arrayCars.find(model => model.name.toLowerCase() === modelInput);
         while(!reserveThis && keepBuying) {
