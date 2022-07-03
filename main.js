@@ -25,7 +25,7 @@ class Reservation {
 }
 
 const arrayReservations = [];
-let keepBuying; 
+let keepBuying = true; 
 
 do {
     let reserveThis;
